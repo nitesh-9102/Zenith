@@ -22,21 +22,85 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <body class="header">
-      <nav>
-        <a href="homepage.html" class="logo-image"
-          ><img src="logo.png" alt="" height="80px" width="80px"
-        /></a>
-        <div class="nav-links">
-          <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="">Emergency</a></li>
-            <li><a href="profile.html">My Services</a></li>
-            <li><a href="">About Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </body>
+
+  <body class="header">
+    <nav>
+      <a href="homepage.html" class="logo-image"
+        ><img src="logo.png" alt="" height="80px" width="80px"
+      /></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="emergency.html">Emergency</a></li>
+          <li><a href="profile.html">My Services</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="emergency-container">
+      <section class="contact">
+        <h2>Emergency Services</h2>
+        <form action="#">
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Full name can't be empty</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="email"
+                id="name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Full name can't be empty</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="phone"
+                id="name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Mobile number can't be empty</div>
+            </div>
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Subject"
+                id="name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Subject can't be empty</div>
+            </div>
+          </div>
+          <div class="textarea-field field">
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"
+              class="item"
+              autocomplete="off"
+            >
+            </textarea>
+            <div class="error-txt">Message can't be empty</div>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="emergency.js"></script>
   </body>
 </html>

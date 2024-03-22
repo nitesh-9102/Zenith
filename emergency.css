@@ -62,3 +62,67 @@ nav {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+.emergency-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 68vh;
+}
+.contact h2 {
+  font-size: 40px;
+  color: #ededed;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact form {
+  width: 600px;
+  text-align: center;
+}
+form .input-box {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.field .item {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+.field .item::placeholder {
+  color: rgb(114, 114, 114);
+}
+.input-box .input-field {
+  width: 50%;
+}
+form .textarea-field .item {
+  resize: none;
+}
+form button {
+  padding: 12px 32px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #ededed;
+  cursor: pointer;
+  margin-top: 20px;
+}
+form button:hover {
+  box-shadow: none;
+  transition: ease 1s;
+}
+
+.field .error-txt {
+  font-size: 12px;
+  color: #131313;
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+  text-align: left;
+}
+form .textarea-field .error-txt {
+  margin-top: -10px;
+}
